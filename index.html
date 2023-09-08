@@ -1,51 +1,58 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Calculadora de Gorjetas</title>
-</head>
-<body>
-   <div id="container">
-    <div>
+  </head>
+  <body>
+    <div id="container">
+      <div>
         <h1 class="title">Calculadora de Gorjetas</h1>
-    </div>
+      </div>
       <div>
         <form class="tipsForm" id="tipsForm">
-            <label for="bill"></label>
-            <p>Quanto ficou a conta?</p>
-            <p> 
-                R$ <input type="number" placeholder="100" name="bill" id="bill" class="formInput" required>
-            </p>
-            <label for="serviceQual">
-                <p>Como foi seu serviço?"</p>
-            </label>
+          <label for="bill"></label>
+          <p>Quanto ficou a conta?</p>
+          <p> 
+          R$ <input type="number" placeholder="100" name="bill" id="bill" class="formInput" required>
+          </p>
+          <label for="serviceQual">
+            <p>Como foi seu serviço?"</p>
+          </label>
             <p>
-                <select name="serviceQual" id="serviceQual" class="formSelect" required>
-                    <option disable selected value="0">--Escolha uma opção</option>
-                    <option value="0.25">25% - Incrível</option>
-                    <option value="0.15">15% - Bom</option>
-                    <option value="0.1">10% - Aceitável</option>
-                    <option value="0.05">05% - Ruim</option>
-                    <option value="0.02">02% - Péssimo</option>
-                </select>
+              <select name="serviceQual" id="serviceQual" class="formSelect" required>
+                <option disable selected value="0">--Escolha uma opção</option>
+                <option value="0.25">25% - Incrível</option>
+                <option value="0.15">15% - Bom</option>
+                <option value="0.1">10% - Aceitável</option>
+                <option value="0.05">05% - Ruim</option>
+                <option value="0.0">0% - Péssimo</option>
+              </select>
             </p>
             <label for="people">
-                <p>Quantas pessoas vão dividir a conta?</p>
+              <p>Quantas pessoas vão dividir a conta?</p>
             </label>
             <p>
-                <input type="number" placeholder="1" name="people" id="people" class="formInput" required> pessoa(s)
+              <input type="number" placeholder="1" name="people" id="people" class="formInput" required> pessoa(s)
             </p>
             <button type="submit" class="formSubmit">Calcular!</button>
         </form>
-    </div>
-    <div id="totalTip">
+      </div>
+      <div id="totalTip">
         Gorjeta Total:
         R$<span id="tip">0.00</span>
         <p id="each">cada!</p>
+      </div>
     </div>
-   </div>
-   <script type="text/javascript" src="script.js"></script>
-</body>
+    <footer>
+      <div>
+       <p>Copyright &copy; 2023 - Desenvolvido por 
+        <a href="https://www.linkedin.com/in/c%C3%A1ssia-de-andrade-943888263/" target="_blank"><span>Cássia de Andrade</span></a> 
+       </p>
+      </div>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>
